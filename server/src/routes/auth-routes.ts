@@ -32,9 +32,10 @@ export const login = async (req: Request, res: Response) => {
   return res.json({ token });  // Send the token as a JSON response
 };
 
+// Create a new router instance
 const router = Router();
 
 // POST /login - Login a user
-router.post('/login', login);
+router.post('/login', login);  // Define the login route
 
-export default router;
+export default router;  // Export the router instance
